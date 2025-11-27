@@ -14,11 +14,7 @@ jobs:
           - { name: "Carlos Alberto", job: "Engenheiro" }
           - { name: "Ana Paula", job: "Arquiteta" }
           - { name: "Lucas Lima", job: "Professor" }
-          - { name: "Fernanda Costa", job: "Designer" }
-          - { name: "Rafael Gomes", job: "Desenvolvedor" }
-          - { name: "Juliana Ribeiro", job: "Jornalista" }
-          - { name: "Bruno Fernandes", job: "Contador" }
-          - { name: "Camila Martins", job: "Enfermeira" }
+
           
 
     steps:
