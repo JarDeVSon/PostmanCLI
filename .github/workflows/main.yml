@@ -12,7 +12,10 @@ jobs:
           - { name: "João Silva", job: "Médico" }
           - { name: "Maria Souza", job: "Advogada" }
           - { name: "Carlos Alberto", job: "Engenheiro" }
-
+          - { name: "João1 Silva", job: "Médico" }
+          - { name: "Maria2 Souza", job: "Advogada" }
+          - { name: "Carlos3 Alberto", job: "Engenheiro" }
+          
     steps:
       - uses: actions/checkout@v4
 
