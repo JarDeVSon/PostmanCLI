@@ -33,7 +33,7 @@ jobs:
           JOB: ${{ matrix.data.job }}
         run: |
           echo "Running test for: $NAME - $JOB"
-          postman collection run "11108942-8d30e54b-fb26-4749-bacb-61c22d1a2835" \
-            -e "11108942-1de5b567-21e5-48bb-81fa-3192ba25873d" \
+          postman collection run ${{ secrets.POSTMAN_ID_COLLECTION }} \
+            -e ${{ secrets.POSTMAN_QA_ENVIRONMENT }} \
             --env-var "name=$NAME" \
             --env-var "job=$JOB"
