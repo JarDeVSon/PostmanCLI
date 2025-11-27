@@ -19,7 +19,6 @@ jobs:
           - { name: "Juliana Ribeiro", job: "Jornalista" }
           - { name: "Bruno Fernandes", job: "Contador" }
           - { name: "Camila Martins", job: "Enfermeira" }
-          - { name: "Pedro Henrique", job: "Fotógrafo" }
           
 
     steps:
