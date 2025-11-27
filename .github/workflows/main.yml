@@ -14,6 +14,4 @@ jobs:
         run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
       - name: Run API tests
         run: |
-          postman collection run "11108942-8d30e54b-fb26-4749-bacb-61c22d1a2835" \
-            -e "11108942-1de5b567-21e5-48bb-81fa-3192ba25873d" \ 
-            -- data-file "**/users.csv"
+          postman collection run "11108942-8d30e54b-fb26-4749-bacb-61c22d1a2835" -e "11108942-1de5b567-21e5-48bb-81fa-3192ba25873d" -- data-file "../../users.csv"
