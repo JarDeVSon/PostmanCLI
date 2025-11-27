@@ -12,6 +12,15 @@ jobs:
           - { name: "João0 Silva", job: "Médico" }
           - { name: "Maria Souza", job: "Advogada" }
           - { name: "Carlos Alberto", job: "Engenheiro" }
+          - { name: "Ana Paula", job: "Arquiteta" }
+          - { name: "Lucas Lima", job: "Professor" }
+          - { name: "Fernanda Costa", job: "Designer" }
+          - { name: "Rafael Gomes", job: "Desenvolvedor" }
+          - { name: "Juliana Ribeiro", job: "Jornalista" }
+          - { name: "Bruno Fernandes", job: "Contador" }
+          - { name: "Camila Martins", job: "Enfermeira" }
+          - { name: "Pedro Henrique", job: "Fotógrafo" }
+          
 
     steps:
       - uses: actions/checkout@v4
