@@ -13,7 +13,6 @@ jobs:
           - { name: "Maria Souza", job: "Advogada" }
           - { name: "Carlos Alberto", job: "Engenheiro" }
 
-
     steps:
       - uses: actions/checkout@v4
 
