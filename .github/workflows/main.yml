@@ -9,7 +9,7 @@ jobs:
     strategy:
       matrix:
         data:
-          - { name: "João0 Silva", job: "Médico" }
+          - { name: "João Silva", job: "Médico" }
           - { name: "Maria Souza", job: "Advogada" }
           - { name: "Carlos Alberto", job: "Engenheiro" }
           - { name: "Ana Paula", job: "Arquiteta" }
