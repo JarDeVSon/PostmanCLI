@@ -8,14 +8,17 @@ jobs:
 
     strategy:
       matrix:
-        data:
-          - { name: "João Silva", job: "Médico" }
-          - { name: "Maria Souza", job: "Advogada" }
-          - { name: "Carlos Alberto", job: "Engenheiro" }
-          - { name: "Ana Paula", job: "Arquiteta" }
-          - { name: "Lucas Lima", job: "Professor" }
-
-          
+        include:
+          - name: "João Silva"
+            job: "Médico"
+          - name: "Maria Souza"
+            job: "Advogada"
+          - name: "Carlos Alberto"
+            job: "Engenheiro"
+          - name: "Ana Paula"
+            job: "Arquiteta"
+          - name: "Lucas Lima"
+            job: "Professor"
 
     steps:
       - uses: actions/checkout@v4
@@ -26,14 +29,17 @@ jobs:
 
       - name: Login to Postman CLI
         run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
-
+      
       - name: Run API tests (matrix)
         env:
-          NAME: ${{ matrix.data.name }}
-          JOB: ${{ matrix.data.job }}
+          NAME: ${{ matrix.name }}
+          JOB: ${{ matrix.job }}
         run: |
           echo "Running test for: $NAME - $JOB"
           postman collection run ${{ secrets.POSTMAN_ID_COLLECTION }} \
             -e ${{ secrets.POSTMAN_QA_ENVIRONMENT }} \
             --env-var "name=$NAME" \
             --env-var "job=$JOB"
+            
+      - name: GitHub Pages v3
+        uses: peaceiris/actions-github-pages@v3.1.12
