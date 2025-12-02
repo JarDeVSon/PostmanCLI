@@ -43,5 +43,8 @@ jobs:
             --env-var "name=$NAME" \
             --env-var "job=$JOB"
             
-      - name: GitHub Pages v3
-        uses: peaceiris/actions-github-pages@v3.1.12
+      - name: Implantar Resultados no Github Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+        
