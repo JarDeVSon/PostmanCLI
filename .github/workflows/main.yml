@@ -11,7 +11,7 @@ jobs:
     strategy:
       matrix:
         include:
-          - name: "João Silva Validar Regras Branch Rules"
+          - name: "João Silva Validar Regras Branch Rules Push proibido pra main"
             job: "Médico"
           - name: "Maria Souza"
             job: "Advogada"
