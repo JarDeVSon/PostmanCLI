@@ -11,7 +11,7 @@ jobs:
     strategy:
       matrix:
         include:
-          - name: "João Silva"
+          - name: "João Silva Shared"
             job: "Médico"
           - name: "Maria Souza"
             job: "Advogada"
