@@ -15,7 +15,7 @@ jobs:
             job: "Médico"
           - name: "Maria Souza"
             job: "Advogada"
-          - name: "Carlos Alberto"
+          - name: "Carlos Roberto"
             job: "Engenheiro"
           - name: "Ana Paula"
             job: "Arquiteta"
