@@ -12,7 +12,7 @@ jobs:
       matrix:
         include:
           - name: "João Silva Validar Regras Branch Rules Push proibido pra main"
-            job: "Guardiao da Branch"
+            job: "Guardiao da Branch'"
           - name: "Maria Souza"
             job: "Advogada"
           - name: "Carlos Roberto"
