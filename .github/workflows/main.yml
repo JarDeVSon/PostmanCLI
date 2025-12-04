@@ -40,8 +40,9 @@ jobs:
           echo "Running test for: $NAME - $JOB"
           postman collection run ${{ secrets.POSTMAN_ID_COLLECTION }} \
             -e ${{ secrets.POSTMAN_QA_ENVIRONMENT }} \
+            --env-var "x-api-key=${{ secrets.X_API_KEY }}" \
             --env-var "name=$NAME" \
-            --env-var "job=$JOB" \
-            --env-var "x-api-key=${{ secrets.X_API_KEY }}"
+            --env-var "job=$JOB"
+            
 
         
