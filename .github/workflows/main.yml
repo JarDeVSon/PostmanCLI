@@ -17,7 +17,7 @@ jobs:
         include:
           - name: "João Silva Validar Regras Branch Rules Push proibido pra main"
             job: "Guardiao da Branch'"
-          - name: "Maria KSKSK"
+          - name: "Maria K"
             job: "Advogada"
           - name: "Carlos Roberto"
             job: "Engenheiro"
